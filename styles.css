@@ -1,0 +1,63 @@
+.fontcirm {
+  font-family:CircularStd-Medium;
+  }
+.colourbg1
+{
+   background-color:#171b2c
+}
+.colourbg2
+{
+   background-color:#2a304b
+}
+.bshadow {
+ 
+  box-shadow: -10px 10px;
+  color:1c2135
+}
+
+.colourbg3
+{
+   background-color:#f5f7f6
+}
+
+.border1{
+  border-bottom: 2px solid #2d3452;
+}
+.borderc1{
+  border-image:linear-gradient(to right, #ff5a5a , #ef2755);
+ 
+}
+
+.grad1 {
+  background-image: linear-gradient(to right, #ff5a5a , #ef2755);
+}
+
+
+ 
+
+
+
+.border11 {
+ 
+  border: 3px solid transparent;
+  border-image: linear-gradient(to right, #ff5a5a , #ef2755);
+  border-image-slice: 1;
+ 
+ 
+}
+
+
+ 
+
+.text1 {
+  font-weight: 500;
+  font-size: 17px;
+	background: linear-gradient(to right, #ff5a5a , #ef2755);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+
+
+
+
