@@ -1,9 +1,15 @@
-<html>
-    <head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSP landing page</title>
         <link rel="stylesheet" href="custom-styles.css"/>
         <link rel="stylesheet" href="styles.css"/>
         <script src="scripts.js"></script>
         <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
+        <!-- CSS for Swper JS Image Slider -->
         <style>
             .swiper-pagination-bullet {
                 padding: 5px 5px;
@@ -21,9 +27,13 @@
                 background: #05101b;
                 width: 20px;
             }
+            
         </style>
     </head>
+
     <body class="bg-ssbg-dark-blue ">
+
+        <!-- Hamburger menu -->
         <div class="navbar-menu relative z-50 bg-ssbg-dark-blue h-screen hidden "> 
             <div class=" bg-ssbg-dark-blue  border-gray-500 border1">
                 <div class=" flex justify-between items-center  px-5">
@@ -72,6 +82,8 @@
         </div>
 
 
+
+        <!-- page contents -->
         <div class="body-content">
             <div class=" bg-ssbg-dark-blue  border-gray-500 border1  ">
                 <div class=" flex justify-between items-center md:px-1 lg:px-4 xl:px-20 2xl:px-36 px-5">
@@ -84,25 +96,25 @@
                             <div class="w-7 h-.25 bg-white border rounded m-1"></div>
                             <div class="w-7 h-.25 bg-white border rounded m-1"></div>
                         </div>
-                        <div class="hidden md:flex font-sm  text-center uppercase bg-gradient-to-r from-ss-grad-1 to-ss-grad-2 text-transparent bg-clip-text  w-30 h-10  py-3   font-CircularStd-Medium">ADVERTISERS</div>
-                        <div class="hidden md:flex w-4 flex-shrink"></div>
-                        <div class="hidden md:flex font-sm  text-center uppercase text-white w-30 h-10  py-3 font-CircularStd-Book">PUBLISHERS</div>
-                        <div class="hidden md:flex w-4 flex-shrink"></div>
-                        <div class="hidden md:flex font-sm  text-center uppercase text-white w-30 h-10  py-3 font-CircularStd-Book">RESOURCES</div>
-                        <div class="hidden md:flex w-4 flex-shrink"></div>
-                        <div class="hidden md:flex font-sm  text-center uppercase text-white w-30 h-10  py-3 font-CircularStd-Book">CUSTOMERS</div>
-                        <div class="hidden md:flex w-4 flex-shrink"></div>
-                        <div class="hidden md:flex font-sm  text-center uppercase text-white w-30 h-10  py-3 font-CircularStd-Book">AUDIENCES</div>
-                        <div class="hidden md:flex w-4 flex-shrink"></div>
+                        <div class="hidden md:block font-sm  text-center uppercase bg-gradient-to-r from-ss-grad-1 to-ss-grad-2 text-transparent bg-clip-text  w-30 h-10  py-3   font-CircularStd-Medium">ADVERTISERS</div>
+                        <div class="hidden md:block w-4 flex-shrink"></div>
+                        <div class="hidden md:block font-sm  text-center uppercase text-white w-30 h-10  py-3 font-CircularStd-Book">PUBLISHERS</div>
+                        <div class="hidden md:block w-4 flex-shrink"></div>
+                        <div class="hidden md:block font-sm  text-center uppercase text-white w-30 h-10  py-3 font-CircularStd-Book">RESOURCES</div>
+                        <div class="hidden md:block w-4 flex-shrink"></div>
+                        <div class="hidden md:block font-sm  text-center uppercase text-white w-30 h-10  py-3 font-CircularStd-Book">CUSTOMERS</div>
+                        <div class="hidden md:block w-4 flex-shrink"></div>
+                        <div class="hidden md:block font-sm  text-center uppercase text-white w-30 h-10  py-3 font-CircularStd-Book">AUDIENCES</div>
+                        <div class="hidden md:block w-4 flex-shrink"></div>
                 
-                        <div class="hidden md:flex flex-shrink-0  w-30 h-10  bg-gradient-to-r from-ss-grad-1 to-ss-grad-2 p-0.5">
+                        <div class="hidden md:block flex-shrink-0  w-30 h-10  bg-gradient-to-r from-ss-grad-1 to-ss-grad-2 p-0.5">
                             <div class="bg-ssbg-dark-blue w-full h-full">
                                 <div class="flex-shrink-0 font-sm text-center uppercase bg-gradient-to-r from-ss-grad-1 to-ss-grad-2 text-transparent bg-clip-text  py-2 px-4   font-CircularStd-Medium ">Get in Touch</div>
                             </div>
                         </div>
-                        <div class="hidden md:flex w-4 flex-shrink"></div>
+                        <div class="hidden md:block w-4 flex-shrink"></div>
                         
-                        <div class="bg-gradient-to-r from-ss-grad-1 to-ss-grad-2  hidden md:flex font-sm  text-center uppercase text-white w-30 h-10      px-10 py-2  font-CircularStd-Medium">Login</div>
+                        <div class="bg-gradient-to-r from-ss-grad-1 to-ss-grad-2  hidden md:block font-sm  text-center uppercase text-white w-30 h-10      px-10 py-2  font-CircularStd-Medium">Login</div>
                     </div>
                 </div>
             </div>
@@ -228,147 +240,145 @@
 
 
                 <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-            <div class="bg-white p-4 md:flex md:p-5">
-                <div class="md:w-1/2">
-                    <img src="image-4.png" class="w-full">
-                </div>
-                    <div class="md:w-1/2 flex-col md:p-6">
-                        <div class="  px-2 py-6  ">
-                            <svg width="19" height="16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <defs>
-                                    <linearGradient x1="11.129%" y1="26.279%" x2="84.44%" y2="67.887%" id="b">
-                                        <stop stop-color="#FF5A5A" offset="0%"/>
-                                        <stop stop-color="#EF2755" offset="100%"/>
-                                    </linearGradient>
-                                    <path d="M13.78 14.144c2.184 0 3.796-1.56 3.796-3.432 0-2.08-1.404-3.484-3.484-3.484-.52 0-.936.208-1.04.26.104-2.236 1.976-4.264 4.056-4.628V0C14.04.312 9.62 2.912 9.62 9.412c0 2.86 1.768 4.732 4.16 4.732zm-9.62 0c2.184 0 3.796-1.56 3.796-3.432 0-2.08-1.456-3.484-3.484-3.484-.52 0-.988.208-1.092.26.104-2.236 1.976-4.264 4.108-4.628V0C4.368.312 0 2.912 0 9.412c0 2.86 1.716 4.732 4.16 4.732z" id="a"/>
-                                </defs>
-                                <g transform="translate(.212 .664)" fill-rule="nonzero" fill="none">
-                                    <use fill="#FFF" xlink:href="#a"/>
-                                    <use fill="url(#b)" xlink:href="#a"/>
-                                </g>
-                            </svg>
-                            
-                            
-                        </div>
-                        <p class=" font-normal text-2xl text-black tracking-wide px-2 leading-relaxed font-CircularStd-Medium  ">Once you get used to having that higher fidelity prototype as your deliverable, it’s hard to go back to the days of just sending your engineering team a static file and asking them to go build it.</p>
-                        <p class="text-gray-500 text-xl text-medium   tracking-wide px-2 py-3 font-CircularStd-Book">PadSquad CEO, Jane Doe</p>
-                    </div>
-                </div>
-                <div class="bg-ssbg-light-gray p-4     w-full md:h-px h-1"></div>
-        </div>
-        <div class="swiper-slide">
-            <div class="bg-white p-4 md:flex md:p-5">
-                <div class="md:w-1/2">
-                    <img src="image-4.png" class="w-full">
-                </div>
-                    <div class="md:w-1/2 flex-col md:p-6">
-                        <div class="  px-2 py-6  ">
-                            <svg width="19" height="16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <defs>
-                                    <linearGradient x1="11.129%" y1="26.279%" x2="84.44%" y2="67.887%" id="b">
-                                        <stop stop-color="#FF5A5A" offset="0%"/>
-                                        <stop stop-color="#EF2755" offset="100%"/>
-                                    </linearGradient>
-                                    <path d="M13.78 14.144c2.184 0 3.796-1.56 3.796-3.432 0-2.08-1.404-3.484-3.484-3.484-.52 0-.936.208-1.04.26.104-2.236 1.976-4.264 4.056-4.628V0C14.04.312 9.62 2.912 9.62 9.412c0 2.86 1.768 4.732 4.16 4.732zm-9.62 0c2.184 0 3.796-1.56 3.796-3.432 0-2.08-1.456-3.484-3.484-3.484-.52 0-.988.208-1.092.26.104-2.236 1.976-4.264 4.108-4.628V0C4.368.312 0 2.912 0 9.412c0 2.86 1.716 4.732 4.16 4.732z" id="a"/>
-                                </defs>
-                                <g transform="translate(.212 .664)" fill-rule="nonzero" fill="none">
-                                    <use fill="#FFF" xlink:href="#a"/>
-                                    <use fill="url(#b)" xlink:href="#a"/>
-                                </g>
-                            </svg>
-                            
-                            
-                        </div>
-                        <p class=" font-normal text-2xl text-black tracking-wide px-2 leading-relaxed font-CircularStd-Medium  ">Once you get used to having that higher fidelity prototype as your deliverable, it’s hard to go back to the days of just sending your engineering team a static file and asking them to go build it.</p>
-                        <p class="text-gray-500 text-xl text-medium   tracking-wide px-2 py-3 font-CircularStd-Book">PadSquad CEO, Jane Doe</p>
-                    </div>
-                </div>
-                <div class="bg-ssbg-light-gray p-4     w-full md:h-px h-1"></div>
-        </div>
-        <div class="swiper-slide">
-            <div class="bg-white p-4 md:flex md:p-5">
-                <div class="md:w-1/2">
-                    <img src="image-4.png" class="w-full">
-                </div>
-                    <div class="md:w-1/2 flex-col md:p-6">
-                        <div class="  px-2 py-6  ">
-                            <svg width="19" height="16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <defs>
-                                    <linearGradient x1="11.129%" y1="26.279%" x2="84.44%" y2="67.887%" id="b">
-                                        <stop stop-color="#FF5A5A" offset="0%"/>
-                                        <stop stop-color="#EF2755" offset="100%"/>
-                                    </linearGradient>
-                                    <path d="M13.78 14.144c2.184 0 3.796-1.56 3.796-3.432 0-2.08-1.404-3.484-3.484-3.484-.52 0-.936.208-1.04.26.104-2.236 1.976-4.264 4.056-4.628V0C14.04.312 9.62 2.912 9.62 9.412c0 2.86 1.768 4.732 4.16 4.732zm-9.62 0c2.184 0 3.796-1.56 3.796-3.432 0-2.08-1.456-3.484-3.484-3.484-.52 0-.988.208-1.092.26.104-2.236 1.976-4.264 4.108-4.628V0C4.368.312 0 2.912 0 9.412c0 2.86 1.716 4.732 4.16 4.732z" id="a"/>
-                                </defs>
-                                <g transform="translate(.212 .664)" fill-rule="nonzero" fill="none">
-                                    <use fill="#FFF" xlink:href="#a"/>
-                                    <use fill="url(#b)" xlink:href="#a"/>
-                                </g>
-                            </svg>
-                            
-                            
-                        </div>
-                        <p class=" font-normal text-2xl text-black tracking-wide px-2 leading-relaxed font-CircularStd-Medium  ">Once you get used to having that higher fidelity prototype as your deliverable, it’s hard to go back to the days of just sending your engineering team a static file and asking them to go build it.</p>
-                        <p class="text-gray-500 text-xl text-medium   tracking-wide px-2 py-3 font-CircularStd-Book">PadSquad CEO, Jane Doe</p>
-                    </div>
-             </div>
-             <div class="bg-ssbg-light-gray p-4     w-full md:h-px h-1"></div>
-        </div>
-        <div class="swiper-slide">
-            <div class="bg-white p-4 md:flex md:p-5">
-                <div class="md:w-1/2">
-                    <img src="image-4.png" class="w-full">
-                </div>
-                    <div class="md:w-1/2 flex-col md:p-6">
-                        <div class="  px-2 py-6  ">
-                            <svg width="19" height="16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <defs>
-                                    <linearGradient x1="11.129%" y1="26.279%" x2="84.44%" y2="67.887%" id="b">
-                                        <stop stop-color="#FF5A5A" offset="0%"/>
-                                        <stop stop-color="#EF2755" offset="100%"/>
-                                    </linearGradient>
-                                    <path d="M13.78 14.144c2.184 0 3.796-1.56 3.796-3.432 0-2.08-1.404-3.484-3.484-3.484-.52 0-.936.208-1.04.26.104-2.236 1.976-4.264 4.056-4.628V0C14.04.312 9.62 2.912 9.62 9.412c0 2.86 1.768 4.732 4.16 4.732zm-9.62 0c2.184 0 3.796-1.56 3.796-3.432 0-2.08-1.456-3.484-3.484-3.484-.52 0-.988.208-1.092.26.104-2.236 1.976-4.264 4.108-4.628V0C4.368.312 0 2.912 0 9.412c0 2.86 1.716 4.732 4.16 4.732z" id="a"/>
-                                </defs>
-                                <g transform="translate(.212 .664)" fill-rule="nonzero" fill="none">
-                                    <use fill="#FFF" xlink:href="#a"/>
-                                    <use fill="url(#b)" xlink:href="#a"/>
-                                </g>
-                            </svg>
-                            
-                            
-                        </div>
-                        <p class=" font-normal text-2xl text-black tracking-wide px-2 leading-relaxed font-CircularStd-Medium  ">Once you get used to having that higher fidelity prototype as your deliverable, it’s hard to go back to the days of just sending your engineering team a static file and asking them to go build it.</p>
-                        <p class="text-gray-500 text-xl text-medium   tracking-wide px-2 py-3 font-CircularStd-Book">PadSquad CEO, Jane Doe</p>
-                    </div>
-             </div>
-                <div class="bg-ssbg-light-gray p-4     w-full md:h-px h-1"></div>
-        </div>
-      </div> 
-      <div class="swiper-pagination"></div>
-    </div>
-
-    <!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script>
-      var swiper = new Swiper('.mySwiper', {
-        spaceBetween: 30,
-        centeredSlides: true,
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: false,
-        },
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-        },
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-      });
-    </script>
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                          <div class="bg-white p-4 md:flex md:p-5">
+                              <div class="md:w-1/2">
+                                  <img src="image-4.png" class="w-full">
+                              </div>
+                                  <div class="md:w-1/2 flex-col md:p-6">
+                                      <div class="  px-2 py-6  ">
+                                          <svg width="19" height="16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                              <defs>
+                                                  <linearGradient x1="11.129%" y1="26.279%" x2="84.44%" y2="67.887%" id="b">
+                                                      <stop stop-color="#FF5A5A" offset="0%"/>
+                                                      <stop stop-color="#EF2755" offset="100%"/>
+                                                  </linearGradient>
+                                                  <path d="M13.78 14.144c2.184 0 3.796-1.56 3.796-3.432 0-2.08-1.404-3.484-3.484-3.484-.52 0-.936.208-1.04.26.104-2.236 1.976-4.264 4.056-4.628V0C14.04.312 9.62 2.912 9.62 9.412c0 2.86 1.768 4.732 4.16 4.732zm-9.62 0c2.184 0 3.796-1.56 3.796-3.432 0-2.08-1.456-3.484-3.484-3.484-.52 0-.988.208-1.092.26.104-2.236 1.976-4.264 4.108-4.628V0C4.368.312 0 2.912 0 9.412c0 2.86 1.716 4.732 4.16 4.732z" id="a"/>
+                                              </defs>
+                                              <g transform="translate(.212 .664)" fill-rule="nonzero" fill="none">
+                                                  <use fill="#FFF" xlink:href="#a"/>
+                                                  <use fill="url(#b)" xlink:href="#a"/>
+                                              </g>
+                                          </svg>
+                                          
+                                          
+                                      </div>
+                                      <p class=" font-normal text-2xl text-black tracking-wide px-2 leading-relaxed font-CircularStd-Medium  ">Once you get used to having that higher fidelity prototype as your deliverable, it’s hard to go back to the days of just sending your engineering team a static file and asking them to go build it.</p>
+                                      <p class="text-gray-500 text-xl text-medium   tracking-wide px-2 py-3 font-CircularStd-Book">PadSquad CEO, Jane Doe</p>
+                                  </div>
+                              </div>
+                      </div>
+                      <div class="swiper-slide">
+                          <div class="bg-white p-4 md:flex md:p-5">
+                              <div class="md:w-1/2">
+                                  <img src="image-4.png" class="w-full">
+                              </div>
+                                  <div class="md:w-1/2 flex-col md:p-6">
+                                      <div class="  px-2 py-6  ">
+                                          <svg width="19" height="16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                              <defs>
+                                                  <linearGradient x1="11.129%" y1="26.279%" x2="84.44%" y2="67.887%" id="b">
+                                                      <stop stop-color="#FF5A5A" offset="0%"/>
+                                                      <stop stop-color="#EF2755" offset="100%"/>
+                                                  </linearGradient>
+                                                  <path d="M13.78 14.144c2.184 0 3.796-1.56 3.796-3.432 0-2.08-1.404-3.484-3.484-3.484-.52 0-.936.208-1.04.26.104-2.236 1.976-4.264 4.056-4.628V0C14.04.312 9.62 2.912 9.62 9.412c0 2.86 1.768 4.732 4.16 4.732zm-9.62 0c2.184 0 3.796-1.56 3.796-3.432 0-2.08-1.456-3.484-3.484-3.484-.52 0-.988.208-1.092.26.104-2.236 1.976-4.264 4.108-4.628V0C4.368.312 0 2.912 0 9.412c0 2.86 1.716 4.732 4.16 4.732z" id="a"/>
+                                              </defs>
+                                              <g transform="translate(.212 .664)" fill-rule="nonzero" fill="none">
+                                                  <use fill="#FFF" xlink:href="#a"/>
+                                                  <use fill="url(#b)" xlink:href="#a"/>
+                                              </g>
+                                          </svg>
+                                          
+                                          
+                                      </div>
+                                      <p class=" font-normal text-2xl text-black tracking-wide px-2 leading-relaxed font-CircularStd-Medium  ">Once you get used to having that higher fidelity prototype as your deliverable, it’s hard to go back to the days of just sending your engineering team a static file and asking them to go build it.</p>
+                                      <p class="text-gray-500 text-xl text-medium   tracking-wide px-2 py-3 font-CircularStd-Book">PadSquad CEO, Jane Doe</p>
+                                  </div>
+                              </div>
+                      </div>
+                      <div class="swiper-slide">
+                          <div class="bg-white p-4 md:flex md:p-5">
+                              <div class="md:w-1/2">
+                                  <img src="image-4.png" class="w-full">
+                              </div>
+                                  <div class="md:w-1/2 flex-col md:p-6">
+                                      <div class="  px-2 py-6  ">
+                                          <svg width="19" height="16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                              <defs>
+                                                  <linearGradient x1="11.129%" y1="26.279%" x2="84.44%" y2="67.887%" id="b">
+                                                      <stop stop-color="#FF5A5A" offset="0%"/>
+                                                      <stop stop-color="#EF2755" offset="100%"/>
+                                                  </linearGradient>
+                                                  <path d="M13.78 14.144c2.184 0 3.796-1.56 3.796-3.432 0-2.08-1.404-3.484-3.484-3.484-.52 0-.936.208-1.04.26.104-2.236 1.976-4.264 4.056-4.628V0C14.04.312 9.62 2.912 9.62 9.412c0 2.86 1.768 4.732 4.16 4.732zm-9.62 0c2.184 0 3.796-1.56 3.796-3.432 0-2.08-1.456-3.484-3.484-3.484-.52 0-.988.208-1.092.26.104-2.236 1.976-4.264 4.108-4.628V0C4.368.312 0 2.912 0 9.412c0 2.86 1.716 4.732 4.16 4.732z" id="a"/>
+                                              </defs>
+                                              <g transform="translate(.212 .664)" fill-rule="nonzero" fill="none">
+                                                  <use fill="#FFF" xlink:href="#a"/>
+                                                  <use fill="url(#b)" xlink:href="#a"/>
+                                              </g>
+                                          </svg>
+                                          
+                                          
+                                      </div>
+                                      <p class=" font-normal text-2xl text-black tracking-wide px-2 leading-relaxed font-CircularStd-Medium  ">Once you get used to having that higher fidelity prototype as your deliverable, it’s hard to go back to the days of just sending your engineering team a static file and asking them to go build it.</p>
+                                      <p class="text-gray-500 text-xl text-medium   tracking-wide px-2 py-3 font-CircularStd-Book">PadSquad CEO, Jane Doe</p>
+                                  </div>
+                           </div>
+                              <div class="bg-red-200 p-4 md:flex md:p-5 w-full h-1"></div>
+                      </div>
+                      <div class="swiper-slide">
+                          <div class="bg-white p-4 md:flex md:p-5">
+                              <div class="md:w-1/2">
+                                  <img src="image-4.png" class="w-full">
+                              </div>
+                                  <div class="md:w-1/2 flex-col md:p-6">
+                                      <div class="  px-2 py-6  ">
+                                          <svg width="19" height="16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                              <defs>
+                                                  <linearGradient x1="11.129%" y1="26.279%" x2="84.44%" y2="67.887%" id="b">
+                                                      <stop stop-color="#FF5A5A" offset="0%"/>
+                                                      <stop stop-color="#EF2755" offset="100%"/>
+                                                  </linearGradient>
+                                                  <path d="M13.78 14.144c2.184 0 3.796-1.56 3.796-3.432 0-2.08-1.404-3.484-3.484-3.484-.52 0-.936.208-1.04.26.104-2.236 1.976-4.264 4.056-4.628V0C14.04.312 9.62 2.912 9.62 9.412c0 2.86 1.768 4.732 4.16 4.732zm-9.62 0c2.184 0 3.796-1.56 3.796-3.432 0-2.08-1.456-3.484-3.484-3.484-.52 0-.988.208-1.092.26.104-2.236 1.976-4.264 4.108-4.628V0C4.368.312 0 2.912 0 9.412c0 2.86 1.716 4.732 4.16 4.732z" id="a"/>
+                                              </defs>
+                                              <g transform="translate(.212 .664)" fill-rule="nonzero" fill="none">
+                                                  <use fill="#FFF" xlink:href="#a"/>
+                                                  <use fill="url(#b)" xlink:href="#a"/>
+                                              </g>
+                                          </svg>
+                                          
+                                          
+                                      </div>
+                                      <p class=" font-normal text-2xl text-black tracking-wide px-2 leading-relaxed font-CircularStd-Medium  ">Once you get used to having that higher fidelity prototype as your deliverable, it’s hard to go back to the days of just sending your engineering team a static file and asking them to go build it.</p>
+                                      <p class="text-gray-500 text-xl text-medium   tracking-wide px-2 py-3 font-CircularStd-Book">PadSquad CEO, Jane Doe</p>
+                                  </div>
+                           </div>
+                              <div class="bg-red-200 p-4 md:flex md:p-5 w-full h-1"></div>
+                      </div>
+                    </div> 
+                    <div class="swiper-pagination"></div>
+                  </div>
+              
+                  <!-- Swiper JS -->
+                  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+                  <script>
+                    var swiper = new Swiper('.mySwiper', {
+                      spaceBetween: 30,
+                      centeredSlides: true,
+                      autoplay: {
+                        delay: 2500,
+                        disableOnInteraction: false,
+                      },
+                      pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true,
+                      },
+                      navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                      },
+                    });
+                  </script>
 
 
 
