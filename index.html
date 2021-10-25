@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSP landing page</title>
+        <link rel="stylesheet" href="styles.css"/>
+        <script src="scripts.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
+        <style>
+        .border1{
+             border-bottom: 2px solid #2d3452;
+        
+        }
+ 
+        </style>
+        <!-- CSS for Swper JS Image Slider -->
+        <style>
+            .swiper-pagination-bullet {
+                padding: 5px 5px;
+                border-radius: 0;
+                width: 10px;
+                height: 10px;
+                border-radius: 25px;
+                text-align: center;
+            
+                opacity: 1;
+                background: rgba(0,0,0,0.2);
+            }
+            .swiper-pagination-bullet-active {
+                color:#fff;
+                background: #05101b;
+                width: 20px;
+            }
+            
+        </style>
+    </head>
+
+    <body class="bg-ssbg-dark-blue ">
+
+        <!-- Hamburger menu -->
+        <div class="navbar-menu relative   bg-ssbg-dark-blue h-screen hidden"> 
+            <div class=" bg-ssbg-dark-blue  border-gray-500 border1">
+                <div class=" flex justify-between items-center  px-5">
+                    <div class="   py-4 w-32 min-w-32 max-w-32  ">
+                        <img class="min-w-max" src="ssp-logo.svg"/>
+                        
+                    </div>
+                    <button  class="navbar-close">
+                        <div class="flex-col ">
+                            <div class="w-7 h-.25 bg-white border rounded m-1 transform -rotate-45 translate-y-2"></div>
+                            <div class="invisible w-7 h-.25 bg-white border rounded m-1"></div>
+                            <div class="w-7 h-.25 bg-white border rounded m-1 transform rotate-45 -translate-y-1"></div>
+                        </div>
+                    </button >
+                </div>
+            </div>
+            <div class=" bg-ssbg-dark-blue flex-col">
+                <div class="  flex-col  ">
+                    <div class=" flex text-xl  text-center uppercase bg-gradient-to-r from-ss-grad-1 to-ss-grad-2 text-transparent bg-clip-text font-CircularStd-Medium   w-30 h-10  my-5 mx-4">ADVERTISERS</div>
+                    <div class="w-auto h-px bg-gray-700 mx-3 my-4"></div>
+                    <div class=" flex text-xl  text-center uppercase text-white w-30 h-10  my-5 mx-4  font-CircularStd-Medium ">PUBLISHERS</div>
+                    <div class="w-auto h-px bg-gray-700 mx-3 my-4"></div>
+                    <div class=" flex text-xl  text-center uppercase text-white w-30 h-10  my-5 mx-4 font-CircularStd-Medium">RESOURCES</div>
+                    <div class="w-auto h-px bg-gray-700 mx-3 my-4"></div>
+                    <div class=" flex text-xl  text-center uppercase text-white w-30 h-10  my-5 mx-4 font-CircularStd-Medium">CUSTOMERS</div>
+                    <div class="w-auto h-px bg-gray-700 mx-3 my-4"></div>
+                    <div class=" flex text-xl  text-center uppercase text-white w-30 h-10  my-5 mx-4 font-CircularStd-Medium">AUDIENCES</div>
+                    <div class="w-auto h-px bg-gray-700 mx-3 my-4"></div>
+                </div>
+                <div class=" flex justify-between my-6 mx-3 absolute inset-x-0 bottom-0 "> 
+                    <div class="flex-shrink-0  w-6/12 h-14 mr-1  bg-gradient-to-r from-ss-grad-1 to-ss-grad-2 p-0.5">
+                        <div class="bg-ssbg-dark-blue w-full h-full">
+                            <div class="flex items-center justify-center font-medium text-lg text-center uppercase bg-gradient-to-r from-ss-grad-1 to-ss-grad-2 text-transparent bg-clip-text  py-3 font-CircularStd-Medium   ">Get in Touch</div>
+                        </div>
+                    </div>
+                    <div class=" flex items-center justify-center bg-gradient-to-r from-ss-grad-1 to-ss-grad-2 font-medium text-lg text-center uppercase text-white ml-1 w-6/12 h-14 font-CircularStd-Medium  py-3">Login</div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- page contents -->
+        <div class="body-content">
+            <div class=" bg-ssbg-dark-blue  border-gray-500 border1  ">
+                <div class=" flex justify-between items-center md:px-1 lg:px-4 xl:px-20 2xl:px-36 px-5">
+                    <div class="   py-4 w-32 ">
+                        <img class="min-w-max" src="ssp-logo.svg"/>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <div class="flex-col    md:hidden navbar-burger">
+                            <div class="w-7 h-.25 bg-white border rounded m-1"></div>
+                            <div class="w-7 h-.25 bg-white border rounded m-1"></div>
+                            <div class="w-7 h-.25 bg-white border rounded m-1"></div>
+                        </div>
+                        <div class="hidden md:block font-sm  text-center uppercase bg-gradient-to-r from-ss-grad-1 to-ss-grad-2 text-transparent bg-clip-text  w-30 h-10  py-3   font-CircularStd-Medium">ADVERTISERS</div>
+                        <div class="hidden md:block w-4 flex-shrink"></div>
+                        <div class="hidden md:block font-sm  text-center uppercase text-white w-30 h-10  py-3 font-CircularStd-Book">PUBLISHERS</div>
+                        <div class="hidden md:block w-4 flex-shrink"></div>
+                        <div class="hidden md:block font-sm  text-center uppercase text-white w-30 h-10  py-3 font-CircularStd-Book">RESOURCES</div>
+                        <div class="hidden md:block w-4 flex-shrink"></div>
+                        <div class="hidden md:block font-sm  text-center uppercase text-white w-30 h-10  py-3 font-CircularStd-Book">CUSTOMERS</div>
+                        <div class="hidden md:block w-4 flex-shrink"></div>
+                        <div class="hidden md:block font-sm  text-center uppercase text-white w-30 h-10  py-3 font-CircularStd-Book">AUDIENCES</div>
+                        <div class="hidden md:block w-4 flex-shrink"></div>
+                
+                        <div class="hidden md:block flex-shrink-0  w-30 h-10  bg-gradient-to-r from-ss-grad-1 to-ss-grad-2 p-0.5">
+                            <div class="bg-ssbg-dark-blue w-full h-full">
+                                <div class="flex-shrink-0 font-sm text-center uppercase bg-gradient-to-r from-ss-grad-1 to-ss-grad-2 text-transparent bg-clip-text  py-2 px-4   font-CircularStd-Medium flex items-center justify-center ">Get in Touch</div>
+                            </div>
+                        </div>
+                        <div class="hidden md:block w-4 flex-shrink"></div>
+                        
+                        <div class="bg-gradient-to-r from-ss-grad-1 to-ss-grad-2  hidden md:block font-sm  text-center uppercase text-white w-30 h-10      px-10 py-2  font-CircularStd-Medium  ">Login</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="md:flex md:items-center md:px-1 lg:px-4 xl:px-20 2xl:px-36 ">
+
+                <div class="bg-ssbg-dark-blue w-full flex-col   md:items-center px-5 mt-6 md:w-7/12 md:p-16 md:pl-0 ">
+                    <div class="text-2xl text-white font-normal tracking-wide  md:text-6xl  leading-tight" >
+                        <p class="font-CircularStd-Medium ">Diversify your advertising strategy with one platform.</p>
+                    </div>
+                    <div class="  text-sm tracking-tight md:text-xl text-sstext-light-gray text-justify md:pr-14 md:tracking-wide font-CircularStd-Book    mt-3">
+                        <p class="">Reach technical audiences, explore unique ad placements, and run multi-channel campaigns all in one place.</p>
+                    </div>
+                    <div class=" flex  justify-between  my-6">
+                        <div class="md:hidden w-6/12 h-10 mr-2  bg-gradient-to-r from-ss-grad-1 to-ss-grad-2 p-0.5">
+                            <div class="bg-ssbg-dark-blue w-full h-full">
+                                <div class="font-medium text-sm text-center uppercase bg-gradient-to-r from-ss-grad-1 to-ss-grad-2 text-transparent bg-clip-text  py-2 font-CircularStd-Medium   ">Get in Touch</div>
+                            </div>
+                        </div>
+                        <div class="md:hidden bg-gradient-to-r from-ss-grad-1 to-ss-grad-2 font-medium text-sm text-center uppercase text-white w-6/12 h-10 ml-2   py-2 font-CircularStd-Medium">Login</div>
+                    </div>
+                </div>
+
+                <div class="md:filter md:drop-shadow-cx  bg-ssbg-light-blue flex-col px-5 py-6 md:w-5/12 md:p-4 md:m-12 md:mr-0  ">
+                    <div class="md:text-3xl text-xl text-white font-medium font-CircularStd-Medium leading-tight py-6">Build a Campaign</div>
+                    <div class="flex-col">
+                        <div class="flex-col py-3">
+                            <div class=" text-sstext-light-gray md:text-lg text-sm py-1 font-CircularStd-Book">First Name</div>
+                            <input class="focus:outline-none   text-white  text:sm md:text-xl  bg-ssbg-light-blue border-sstext-light-gray focus:border-white border-b-2 w-full py-2 md:py-2 font-CircularStd-Book   " type="text" value="Ashwin Krishnakumar" id="lname" name="lname">
+                        </div>
+                        <div class="flex-col py-3">
+                            <div class=" text-sstext-light-gray md:text-lg text-sm py-1 font-CircularStd-Book">Last Name</div>
+                            <input class="focus:outline-none text-white text:sm md:text-xl  bg-ssbg-light-blue border-sstext-light-gray focus:border-white border-b-2 w-full py-2 md:py-2 font-CircularStd-Book" type="text"  id="lname" name="lname">
+                        </div>
+                        <div class="flex-col py-3">
+                            <div class=" text-sstext-light-gray md:text-lg text-sm py-1 font-CircularStd-Book">Country</div>
+                            <input class="focus:outline-none text-white text:sm md:text-xl bg-ssbg-light-blue border-sstext-light-gray focus:border-white border-b-2 w-full py-2 md:py-2 font-CircularStd-Book" type="text"  id="lname" name="lname">
+                        </div>
+                    </div>
+                    <div class="py-3  md:flex md:justify-end ">
+                        <div class="flex-shrink-0    bg-gradient-to-r from-ss-grad-1 to-ss-grad-2 md:w-6/12 font-CircularStd-Medium  font-normal lg:text-base md:text-sm  text-xs  text-center uppercase text-white w-full h-12  py-4    md:py-3">Submit your details</div> 
+                    </div>
+                </div>
+            </div>
+
+            <div class=" bg-ssbg-light-gray flex-col px-5 py-6 md:px-1 lg:px-4 xl:px-20 2xl:px-36">
+                <div class="pt-4 md:w-1/2 md:pb-4">
+                    <p class="font-semi md:text-4xl text-xl text-ssbg-dark-blue font-CircularStd-Medium md:tracking-wider leading-normal ">Effortless access to in-demand audiences at scale. </p>
+                    <p class="text-sstext-light-gray md:text-xl text-sm pt-3  tracking-tight md:tracking-normal font-CircularStd-Book">We've helped dozens of companies go from startup to IPO, find out how we can help you take the next step.</p>
+                </div>
+                <div class="md:flex md:justify-evenly   ">
+                    <div class=" bg-white pb-4 md:w-1/3 ">
+                        <img src="image-1.png" class="w-full my-4  md:my-0">
+                        <div class="px-3 md:pt-4">
+                            <p class="font-medium text-lg md:text-2xl text-ssbg-dark-blue leading-snug font-CircularStd-Medium tracking-tight ">Access hundreds of publishers instantly.</p>
+                            <p class="text-sstext-light-gray text-sm md:text-xl  tracking-normal md:tracking-tighter py-2 font-CircularStd-Book">Get your product in front of passionate people from in-demand verticals like design, development, cryptocurrency, and tech-savvy early adopters.</p>
+                            <p class="bg-gradient-to-r from-ss-grad-1 to-ss-grad-2 text-transparent bg-clip-text md:text-lg text-sm font-normal md:font-semibold font-CircularStd-Medium pb-2 pt-4 uppercase">Read More</p>
+                        </div>        
+                    </div>
+                    <div class=" bg-white pb-4 md:mx-6 md:w-1/3">
+                        <img src="image-2.png" class="w-full my-4 md:my-0">
+                        <div class="px-3 md:pt-4">
+                            <p class="font-medium text-lg md:text-2xl text-ssbg-dark-blue leading-snug font-CircularStd-Medium tracking-tight">One set of creative, hundreds of ad formats.</p>
+                            <p class="text-sstext-light-gray text-sm md:text-xl  tracking-normal md:tracking-tighter py-2 font-CircularStd-Book">Pick the perfect placements based on your goals. All ad formats fit seamlessly into the user interface.</p>
+                            <p class="bg-gradient-to-r from-ss-grad-1 to-ss-grad-2 text-transparent bg-clip-text md:text-lg text-sm font-normal md:font-semibold font-CircularStd-Medium pb-2 pt-4 uppercase">Read More</p>
+                        </div>        
+                    </div>
+                    <div class=" bg-white pb-4 md:w-1/3 ">
+                        <img src="image-3.png" class="w-full my-4 md:my-0">
+                        <div class="px-3 md:pt-4"> 
+                            <div class="md:flex-col md:items-stretch  ">
+                                <div class="">
+                                    <p class="font-medium text-lg md:text-2xl text-ssbg-dark-blue leading-snug font-CircularStd-Medium tracking-tight">Adblock on? No worries.</p>
+                                    <p class="text-sstext-light-gray text-sm md:text-xl  tracking-normal md:tracking-tighter py-2 font-CircularStd-Book">Our whitelisted ads help you reach more technical, ad-averse audiences.</p>
+                                </div>
+                                <div class=" ">
+                                    <p class="bg-gradient-to-r from-ss-grad-1 to-ss-grad-2 text-transparent bg-clip-text md:text-lg text-sm font-normal md:font-semibold font-CircularStd-Medium pb-2 pt-4 uppercase">Read More</p>
+                                </div>  
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+
+            </div>
+                    
+            <div class="bg-ssbg-dark-blue flex-col px-5 py-8 md:px-1 lg:px-4 xl:px-20 2xl:px-36">
+                <div class="md:w-1/2">
+                    <p class="font-medium text-xl md:text-4xl text-white tracking-wide md:tracking-wider py-2 font-CircularStd-Medium ">Reach your audience in the right place at the right time.</p>
+                    <p class="text-sstext-light-gray text-sm  md:text-xl md:tracking-wider tracking-tight py-2 font-CircularStd-Book">Discover the most popular publishers among your target audience with our curated network.</p>
+                </div>
+                <div class="md:flex">
+                    <div class="md:pr-2">
+                        <div class=" bg-ssbg-light-blue px-3 md:py-3 py-2 my-4 border-l-2 border-red-500">
+                            <p class="font-medium text-lg md:text-2xl text-white tracking-wide py-1 md:py-2 font-CircularStd-Medium ">Developer</p>
+                            <p class="text-sstext-light-gray text-sm md:text-xl  tracking-normal md:tracking-tighter py-1 md:py-2 font-CircularStd-Book">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus</p>
+                        </div>
+                        <div class=" bg-ssbg-light-blue px-3 md:py-3 py-2 my-4">
+                            <p class="font-medium  text-lg md:text-2xl text-white tracking-wide py-2 font-CircularStd-Medium ">Crypto Enthusiast</p>
+                            <p class="text-sstext-light-gray text-sm md:text-xl  tracking-normal md:tracking-tighter py-2 font-CircularStd-Book">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus</p>
+                        </div>
+                    </div>
+                    <div class=" md:pl-2">
+
+                            <div class=" bg-ssbg-light-blue px-3 md:py-3 py-2 my-4">
+                                <p class="font-medium  text-lg md:text-2xl text-white tracking-wide py-2 font-CircularStd-Medium ">Technology</p>
+                                <p class="text-sstext-light-gray text-sm md:text-xl  tracking-normal md:tracking-tighter py-2 font-CircularStd-Book">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus</p>
+                            </div>
+
+                            <div class=" bg-ssbg-light-blue px-3 md:py-3 py-2 my-4">
+                                <p class="font-medium  text-lg md:text-2xl text-white tracking-wide py-1 md:py-2  font-CircularStd-Medium">Business</p>
+                                <p class="text-sstext-light-gray text-sm md:text-xl  tracking-normal md:tracking-tighter py-2 font-CircularStd-Book">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus</p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image Slider -->
+            <div class=" bg-ssbg-light-gray flex-col px-5 py-6 md:px-1 lg:px-4 xl:px-20 2xl:px-36">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                          <div class="bg-white p-2 md:flex md:p-5">
+                              <div class="md:w-1/2">
+                                  <img src="image-4.png" class="w-full">
+                              </div>
+                                  <div class="md:w-1/2 flex-col md:p-6">
+                                      <div class="  px-2 py-6  ">
+                                          <svg width="19" height="16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                              <defs>
+                                                  <linearGradient x1="11.129%" y1="26.279%" x2="84.44%" y2="67.887%" id="b">
+                                                      <stop stop-color="#FF5A5A" offset="0%"/>
+                                                      <stop stop-color="#EF2755" offset="100%"/>
+                                                  </linearGradient>
+                                                  <path d="M13.78 14.144c2.184 0 3.796-1.56 3.796-3.432 0-2.08-1.404-3.484-3.484-3.484-.52 0-.936.208-1.04.26.104-2.236 1.976-4.264 4.056-4.628V0C14.04.312 9.62 2.912 9.62 9.412c0 2.86 1.768 4.732 4.16 4.732zm-9.62 0c2.184 0 3.796-1.56 3.796-3.432 0-2.08-1.456-3.484-3.484-3.484-.52 0-.988.208-1.092.26.104-2.236 1.976-4.264 4.108-4.628V0C4.368.312 0 2.912 0 9.412c0 2.86 1.716 4.732 4.16 4.732z" id="a"/>
+                                              </defs>
+                                              <g transform="translate(.212 .664)" fill-rule="nonzero" fill="none">
+                                                  <use fill="#FFF" xlink:href="#a"/>
+                                                  <use fill="url(#b)" xlink:href="#a"/>
+                                              </g>
+                                          </svg>
+                                          
+                                          
+                                      </div>
+                                      <p class=" font-medium text-lg md:text-3xl  text-ssbg-dark-blue tracking-tighter md:tracking-tight px-2 leading-relaxed font-CircularStd-Medium  ">Once you get used to having that higher fidelity prototype as your deliverable, it’s hard to go back to the days of just sending your engineering team a static file and asking them to go build it.</p>
+                                      <p class="text-sstext-light-gray text-sm md:text-xl text-medium   tracking-wide px-2 py-3 font-CircularStd-Book">PadSquad CEO, Jane Doe</p>
+                                  </div>
+                              </div>
+                              <div class="bg-ssbg-light-gray p-4 md:flex md:p-5 w-full h-1"></div>
+                      </div>
+                      <div class="swiper-slide">
+                          <div class="bg-white p-2 md:flex md:p-5">
+                              <div class="md:w-1/2">
+                                  <img src="image-4.png" class="w-full">
+                              </div>
+                                  <div class="md:w-1/2 flex-col md:p-6">
+                                      <div class="  px-2 py-6  ">
+                                          <svg width="19" height="16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                              <defs>
+                                                  <linearGradient x1="11.129%" y1="26.279%" x2="84.44%" y2="67.887%" id="b">
+                                                      <stop stop-color="#FF5A5A" offset="0%"/>
+                                                      <stop stop-color="#EF2755" offset="100%"/>
+                                                  </linearGradient>
+                                                  <path d="M13.78 14.144c2.184 0 3.796-1.56 3.796-3.432 0-2.08-1.404-3.484-3.484-3.484-.52 0-.936.208-1.04.26.104-2.236 1.976-4.264 4.056-4.628V0C14.04.312 9.62 2.912 9.62 9.412c0 2.86 1.768 4.732 4.16 4.732zm-9.62 0c2.184 0 3.796-1.56 3.796-3.432 0-2.08-1.456-3.484-3.484-3.484-.52 0-.988.208-1.092.26.104-2.236 1.976-4.264 4.108-4.628V0C4.368.312 0 2.912 0 9.412c0 2.86 1.716 4.732 4.16 4.732z" id="a"/>
+                                              </defs>
+                                              <g transform="translate(.212 .664)" fill-rule="nonzero" fill="none">
+                                                  <use fill="#FFF" xlink:href="#a"/>
+                                                  <use fill="url(#b)" xlink:href="#a"/>
+                                              </g>
+                                          </svg>
+                                          
+                                          
+                                      </div>
+                                      <p class=" font-medium text-lg md:text-3xl  text-ssbg-dark-blue tracking-tighter md:tracking-tight px-2 leading-relaxed font-CircularStd-Medium  ">Once you get used to having that higher fidelity prototype as your deliverable, it’s hard to go back to the days of just sending your engineering team a static file and asking them to go build it.</p>
+                                      <p class="text-sstext-light-gray text-sm md:text-xl text-medium   tracking-wide px-2 py-3 font-CircularStd-Book">PadSquad CEO, Jane Doe</p>
+                                  </div>
+                              </div>
+                              <div class="bg-ssbg-light-gray p-4 md:flex md:p-5 w-full h-1"></div>
+                      </div>
+                      <div class="swiper-slide">
+                          <div class="bg-white p-2 md:flex md:p-5">
+                              <div class="md:w-1/2">
+                                  <img src="image-4.png" class="w-full">
+                              </div>
+                                  <div class="md:w-1/2 flex-col md:p-6">
+                                      <div class="  px-2 py-6  ">
+                                          <svg width="19" height="16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                              <defs>
+                                                  <linearGradient x1="11.129%" y1="26.279%" x2="84.44%" y2="67.887%" id="b">
+                                                      <stop stop-color="#FF5A5A" offset="0%"/>
+                                                      <stop stop-color="#EF2755" offset="100%"/>
+                                                  </linearGradient>
+                                                  <path d="M13.78 14.144c2.184 0 3.796-1.56 3.796-3.432 0-2.08-1.404-3.484-3.484-3.484-.52 0-.936.208-1.04.26.104-2.236 1.976-4.264 4.056-4.628V0C14.04.312 9.62 2.912 9.62 9.412c0 2.86 1.768 4.732 4.16 4.732zm-9.62 0c2.184 0 3.796-1.56 3.796-3.432 0-2.08-1.456-3.484-3.484-3.484-.52 0-.988.208-1.092.26.104-2.236 1.976-4.264 4.108-4.628V0C4.368.312 0 2.912 0 9.412c0 2.86 1.716 4.732 4.16 4.732z" id="a"/>
+                                              </defs>
+                                              <g transform="translate(.212 .664)" fill-rule="nonzero" fill="none">
+                                                  <use fill="#FFF" xlink:href="#a"/>
+                                                  <use fill="url(#b)" xlink:href="#a"/>
+                                              </g>
+                                          </svg>
+                                          
+                                          
+                                      </div>
+                                      <p class=" font-medium text-lg md:text-3xl  text-ssbg-dark-blue tracking-tighter md:tracking-tight px-2 leading-relaxed font-CircularStd-Medium  ">Once you get used to having that higher fidelity prototype as your deliverable, it’s hard to go back to the days of just sending your engineering team a static file and asking them to go build it.</p>
+                                      <p class="text-sstext-light-gray text-sm md:text-xl text-medium   tracking-wide px-2 py-3 font-CircularStd-Book">PadSquad CEO, Jane Doe</p>
+                                  </div>
+                           </div>
+                           <div class="bg-ssbg-light-gray p-4 md:flex md:p-5 w-full h-1"></div>
+                      </div>
+                      <div class="swiper-slide">
+                          <div class="bg-white p-2 md:flex md:p-5">
+                              <div class="md:w-1/2">
+                                  <img src="image-4.png" class="w-full">
+                              </div>
+                                  <div class="md:w-1/2 flex-col md:p-6">
+                                      <div class="  px-2 py-6  ">
+                                          <svg width="19" height="16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                              <defs>
+                                                  <linearGradient x1="11.129%" y1="26.279%" x2="84.44%" y2="67.887%" id="b">
+                                                      <stop stop-color="#FF5A5A" offset="0%"/>
+                                                      <stop stop-color="#EF2755" offset="100%"/>
+                                                  </linearGradient>
+                                                  <path d="M13.78 14.144c2.184 0 3.796-1.56 3.796-3.432 0-2.08-1.404-3.484-3.484-3.484-.52 0-.936.208-1.04.26.104-2.236 1.976-4.264 4.056-4.628V0C14.04.312 9.62 2.912 9.62 9.412c0 2.86 1.768 4.732 4.16 4.732zm-9.62 0c2.184 0 3.796-1.56 3.796-3.432 0-2.08-1.456-3.484-3.484-3.484-.52 0-.988.208-1.092.26.104-2.236 1.976-4.264 4.108-4.628V0C4.368.312 0 2.912 0 9.412c0 2.86 1.716 4.732 4.16 4.732z" id="a"/>
+                                              </defs>
+                                              <g transform="translate(.212 .664)" fill-rule="nonzero" fill="none">
+                                                  <use fill="#FFF" xlink:href="#a"/>
+                                                  <use fill="url(#b)" xlink:href="#a"/>
+                                              </g>
+                                          </svg>
+                                          
+                                          
+                                      </div>
+                                      <p class=" font-medium text-lg md:text-3xl  text-ssbg-dark-blue tracking-tighter md:tracking-tight px-2 leading-relaxed font-CircularStd-Medium  ">Once you get used to having that higher fidelity prototype as your deliverable, it’s hard to go back to the days of just sending your engineering team a static file and asking them to go build it.</p>
+                                      <p class="text-sstext-light-gray text-sm md:text-xl text-medium   tracking-wide px-2 py-3 font-CircularStd-Book">PadSquad CEO, Jane Doe</p>
+                                  </div>
+                           </div>
+                           <div class="bg-ssbg-light-gray p-4 md:flex md:p-5 w-full h-1"></div>
+                      </div>
+                    </div> 
+                    <div class="swiper-pagination"></div>
+                  </div>
+              
+                  <!-- Swiper JS -->
+                  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+                  <script>
+                    var swiper = new Swiper('.mySwiper', {
+                      spaceBetween: 30,
+                      centeredSlides: true,
+                      autoplay: {
+                        delay: 2500,
+                        disableOnInteraction: false,
+                      },
+                      pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true,
+                      },
+                      navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                      },
+                    });
+                  </script>
+
+
+
+
+
+
+
+
+
+
+
+                <!-- <div class=" ">
+                    <div class="p-3 flex justify-center ">
+                        <div class="flex justify-between w-16 ">
+                            <div class="w-5 h-1.5 bg-gray-900 rounded-full"></div>
+                            <div class=" w-1.5 h-1.5 bg-gray-500 rounded-full"></div>
+                            <div class=" w-1.5 h-1.5 bg-gray-500 rounded-full"></div>
+                            <div class=" w-1.5 h-1.5 bg-gray-500 rounded-full"></div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+
+
+
+
+
+
+            
+            
+            
+
+        
+        
+        
+
+
+
+
+
+
+
+
+    </body>
+</html>
