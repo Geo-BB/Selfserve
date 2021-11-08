@@ -8,7 +8,6 @@
         <link rel="stylesheet" href="styles.css"/>
         <script src="scripts.js"></script>
         <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-
         <style>
         .border1{
              border-bottom: 2px solid #2d3452;
@@ -139,24 +138,28 @@
                 </div>
 
                 <div class="md:filter md:drop-shadow-cx  bg-ssbg-light-blue flex-col px-5 py-6 md:w-5/12 md:p-4 md:m-12 md:mr-0  ">
-                    <div class="md:text-3xl text-xl text-white font-medium font-CircularStd-Medium leading-tight py-6">Build a Campaign</div>
-                    <div class="flex-col">
-                        <div class="flex-col py-3">
-                            <div class=" text-sstext-light-gray md:text-lg text-sm py-1 font-CircularStd-Book">Your Name</div>
-                            <input class="focus:outline-none   text-white  text:sm md:text-xl  bg-ssbg-light-blue border-sstext-light-gray focus:border-white border-b-2 w-full py-2 md:py-2 font-CircularStd-Book   " type="text" placeholder="Your name"  >
+                    <form class="contact__form container" method="post" action="https://app.selfserveplus.com/api/contact"> 
+                        <div class="contact__msg text-white bg-green-600 "></div>
+                        <div class="md:text-3xl text-xl text-white font-medium font-CircularStd-Medium leading-tight py-6">Build a Campaign</div>
+                        <div class="flex-col">
+                            <div class="flex-col py-3">
+                                <div class=" text-sstext-light-gray md:text-lg text-sm py-1 font-CircularStd-Book">Your Name</div>
+                                <input name="name" required class="focus:outline-none   text-white  text:sm md:text-xl  bg-ssbg-light-blue border-sstext-light-gray focus:border-white border-b-2 w-full py-2 md:py-2 font-CircularStd-Book   " type="text" placeholder="Your name"  >
+                            </div>
+                            <div class="flex-col py-3">
+                                <div class=" text-sstext-light-gray md:text-lg text-sm py-1 font-CircularStd-Book">Company</div>
+                                <input name="company" required class="focus:outline-none text-white text:sm md:text-xl  bg-ssbg-light-blue border-sstext-light-gray focus:border-white border-b-2 w-full py-2 md:py-2 font-CircularStd-Book" type="text" placeholder="Company name"  >
+                            </div>
+                            <div class="flex-col py-3">
+                                <div class=" text-sstext-light-gray md:text-lg text-sm py-1 font-CircularStd-Book">Email</div>
+                                <input name="email" required class="focus:outline-none text-white text:sm md:text-xl bg-ssbg-light-blue border-sstext-light-gray focus:border-white border-b-2 w-full py-2 md:py-2 font-CircularStd-Book" type="email" placeholder="Enter your email"  >
+                                <input name="pageTitle" required class="hidden" type="text" value="ssp landing page">
+                            </div>
                         </div>
-                        <div class="flex-col py-3">
-                            <div class=" text-sstext-light-gray md:text-lg text-sm py-1 font-CircularStd-Book">Company</div>
-                            <input class="focus:outline-none text-white text:sm md:text-xl  bg-ssbg-light-blue border-sstext-light-gray focus:border-white border-b-2 w-full py-2 md:py-2 font-CircularStd-Book" type="text" placeholder="Company name"  >
+                        <div class="py-3  md:flex md:justify-end ">
+                            <button type="submit" class="flex-shrink-0    bg-gradient-to-r from-ss-grad-1 to-ss-grad-2 md:w-6/12 font-CircularStd-Medium  font-normal lg:text-base md:text-sm  text-xs  text-center uppercase text-white w-full h-12  py-4    md:py-3">Submit your details</button> 
                         </div>
-                        <div class="flex-col py-3">
-                            <div class=" text-sstext-light-gray md:text-lg text-sm py-1 font-CircularStd-Book">Email</div>
-                            <input class="focus:outline-none text-white text:sm md:text-xl bg-ssbg-light-blue border-sstext-light-gray focus:border-white border-b-2 w-full py-2 md:py-2 font-CircularStd-Book" type="text" placeholder="Enter your email"  >
-                        </div>
-                    </div>
-                    <div class="py-3  md:flex md:justify-end ">
-                        <div class="flex-shrink-0    bg-gradient-to-r from-ss-grad-1 to-ss-grad-2 md:w-6/12 font-CircularStd-Medium  font-normal lg:text-base md:text-sm  text-xs  text-center uppercase text-white w-full h-12  py-4    md:py-3">Submit your details</div> 
-                    </div>
+                    </form>
                 </div>
             </div>
 
@@ -417,7 +420,47 @@
 
 
 
-
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js'></script>
+        
+      <script id="rendered-js" >
+        (function ($) {
+          'use strict';
+          var form = $('.contact__form'),
+          message = $('.contact__msg'),
+          form_data;
+          // Success function
+          function done_func(response) {
+            message.fadeIn().removeClass('alert-danger').addClass('alert-success');
+            message.text("Requested successfully");
+            setTimeout(function () {
+              message.fadeOut();
+            }, 2000);
+            form.find('input:not([type="submit"]), textarea').val('');
+          }
+          // fail function
+          function fail_func(data) {
+            message.fadeIn().removeClass('alert-success').addClass('alert-success');
+            message.text(data.responseText);
+            setTimeout(function () {
+              message.fadeOut();
+            }, 2000);
+          }
+        
+          form.submit(function (e) {
+            e.preventDefault();
+            form_data = $(this).serialize();
+            $.ajax({
+              type: 'POST',
+              url: form.attr('action'),
+              data: form_data }).
+        
+            done(done_func).
+            fail(fail_func);
+          });
+        
+        })(jQuery);
+        //# sourceURL=pen.js
+            </script>
 
 
     </body>
